@@ -95,8 +95,22 @@
               />
             </label>
           </div>
-          <div data-netlify-recaptcha="true"></div>
-          <button type="submit">Reachout</button>
+          <div>
+            <label for="message"
+              >Your Message
+              <textarea
+                rows="5"
+                width="500px"
+                name="message"
+                id="message"
+                placeholder="🎣 Drop me a line. (fill in your message here)"
+              ></textarea>
+            </label>
+          </div>
+          <div class="container__form--submit-captcha">
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">Reachout</button>
+          </div>
         </div>
       </form>
     </section>
