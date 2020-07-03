@@ -13,10 +13,10 @@ const processForm = form => {
     });
 };
 
-const emailForm = document.querySelector(".email-form");
-if (emailForm) {
-  emailForm.addEventListener("submit", e => {
+const reachout = document.querySelector(".reachout");
+if (reachout) {
+  reachout.addEventListener("submit", e => {
     e.preventDefault();
-    processForm(emailForm);
+    processForm(reachout);
   });
 }
