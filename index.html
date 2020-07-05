@@ -7,7 +7,7 @@
       J. Tucker Wray 🚀 Javascript |⚛| React | Python |🐍| Redux | Node |
       Express 💹 | SQL | PostgreSQL | Bash 💰
     </title>
-    <link rel=stylesheet" href="src/index.css"/>
+    <link rel=stylesheet" href="./index.css"/>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   </head>
   <body>
@@ -84,9 +84,15 @@
               <input name="bot-field" id="bot-field" />
             </label>
           </div>
+          <div class="inputToggleBox">
+          <div class="inputToggle">
+<span class="inputToggle--knob"></span>
+<span class="inputToggleOption">phone</span>
+<span class="inputToggleOption">email</span>
+          </div>
 <div class="radio"><select name="radio" id="radio"><option value="email">email</option><option value="phone">phone</option></select> </div>
-          <div>
-            <div>
+          <div class="wholeFormBox">
+            <div class="emailBox">
               <label for="email"
                 >Your email address
                 <input
@@ -97,7 +103,7 @@
                 />
               </label>
             </div>
-            <div>
+            <div class="phoneBox">
               <label for="phone"
                 >Your Phone Number
                 <input
@@ -108,7 +114,7 @@
                 />
               </label>
             </div>
-            <div>
+            <div class="messageBox">
               <label for="message"
                 >Your Message
                 <textarea
@@ -119,7 +125,7 @@
                 ></textarea>
               </label>
             </div>
-            <div class="container__form--submit-captcha">
+            <div class="submit-captchaBox">
               <div data-netlify-recaptcha="true"></div>
               <button type="submit">Reachout</button>
             </div>
