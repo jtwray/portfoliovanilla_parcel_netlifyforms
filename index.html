@@ -9,6 +9,329 @@
       Express 💹 | SQL | PostgreSQL | Bash 💰
     </title>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <style id="/src/index.css:-css" type="text/css">/* http://meyerweb.com/eric/tools/css/reset/ 
+      v2.0 | 20110126
+      License: none (public domain)
+   */
+   
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+     box-sizing: border-box;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   html {
+     font-size: 62.5%;
+     margin: 0 auto;
+     box-shadow: 0 4px 2px 0.2px;
+   }
+   * {
+     max-width: 880px;
+   }
+   
+   body {
+     margin: 0;
+     line-height: 1;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+       sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     width: 100%;
+     max-width: 880px;
+   }
+   ol,
+   ul {
+     list-style: none;
+   }
+   blockquote,
+   q {
+     quotes: none;
+   }
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+     content: "";
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+   nav {
+     width: 100%;
+     display: flex;
+     position: fixed;
+     justify-content: flex-end;
+     align-items: center;
+     top: 5rem;
+   }
+   nav a {
+     font-size: 4rem;
+     color: #fffff9;
+     background: springgreen;
+     text-shadow: 0px 3px 1px black;
+     box-shadow: 0px 4px 6px 0px black;
+     padding: 1rem;
+   }
+   #about {
+     display: flex;
+     border: 2rem solid black;
+   }
+   
+   introduction {
+     padding: 2rem;
+   }
+   
+   .headerImg {
+     width: 50%;
+     border: solid orange;
+   }
+   
+   img {
+     max-width: -webkit-fill-available;
+     width: 100%;
+     border-bottom: aqua 1rem solid;
+     box-shadow: 0 4px 6px 0;
+   }
+   
+   section#skills {
+     width: 100%;
+     border-bottom: aqua 2rem solid;
+     font-size: 3rem;
+     font-weight: 600;
+     text-shadow: 0px 3px 1px #8da0c1;
+     margin: 1rem;
+     padding: 2rem;
+   }
+   
+   section#projects {
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   main {
+     display: block;
+   }
+   
+   div#navspacing {
+     height: 12rem;
+     border: 1rem solid blue;
+   }
+   
+   .card {
+     display: flex;
+     justify-content: space-between;
+     width: 40%;
+     border: 0.5rem red groove;
+     border-radius: 4%;
+     /* padding: 1rem; */
+     margin: 1rem 0;
+     background: firebrick;
+     color: antiquewhite;
+     text-shadow: 2px 0px 0.1px black;
+     flex-direction: column;
+   }
+   
+   .projects {
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+     flex-flow: wrap;
+   }
+   
+   .projectInfoBlock a {
+     font-size: 1.6rem;
+     font-weight: bolder;
+     text-decoration: none;
+     width: -webkit-fill-available;
+     border-radius: 8px;
+     padding: 0.5rem;
+     margin-top: 1rem;
+     color: antiquewhite;
+     text-shadow: 2px 0px 0.1px black;
+   }
+   .card h3 {
+     font-size: 2rem;
+     border-bottom: 0.5rem groove red;
+     padding: 0.5rem;
+     margin: 0;
+   }
+   
+   #contact form input {
+     width: 200px;
+     margin: 1rem;
+     border: solid rebeccapurple 5px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px 0 black;
+     flex:0 1 200px;
+   }
+   #contact form textarea {
+     width: 80vw;
+     max-width: 600px;
+     margin: 1rem;
+     border: solid rebeccapurple 5px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px 0 black;
+   }
+   #contact form {
+     display: flex;
+     width: 100%;
+     color: whitesmoke;
+       background: repeating-radial-gradient(
+       circle at 4.2% 9% ,
+       red,
+       orange 16.18px,
+       yellow 26.179px,
+       limegreen 42.359px,
+       royalblue 71.162px,
+       indigo 115.141px,
+       violet 186.299px,
+       red 301.432px
+     );;
+     padding: 1rem;
+     font-weight:600;
+   font-size:2rem;
+     border: solid rebeccapurple 5px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px 0 black;
+   text-shadow:0 3px 1px hsl(275, 100%, 22%);
+    color:   hsl(275, 100%, 92%);
+   }
+   button {
+     border-radius: 3px;
+     box-shadow: 3px 2px 2px 0px black;
+     color: purple;
+     background: white;
+     text-shadow: 0.5px 0.5px 0px black, 1.75px 1.75px 1px white,
+       2px 3px 1px purple;
+     font-size: 3rem;
+     cursor: pointer;
+   }
+   
+   button:hover {
+     background: purple;
+     color: white;
+     box-shadow: 0px 4px 2px .1px black;
+     text-shadow: 1px 3px 0px black;
+     font-size: 3rem;
+   }
+   button:active {
+     background: rebeccapurple;
+     color:black;
+     box-shadow: 1px 1px 1px 1px black;
+     text-shadow: 0px 3px 0px white;
+     font-size: 3rem;
+   }
+   button:active {
+     background: rebeccapurple;
+     color: white;
+     box-shadow: 0px 4px 2px .1px black;
+     text-shadow: -1.5px -2px 0px black,1px 2px 4px black;
+     font-size: 3rem;
+   }
+   
+   
+   
+   </style>
   </head>
   <body>
     <header>
