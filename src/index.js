@@ -20,9 +20,9 @@ let projects = [
     githubRepo: "https://github.com/jtwray/ReactReduxThunk"
   },
   {
-    name: "Kanyes Quotes",
+    name: "TheArtificialArtist",
     imgUrl: "https://i.imgur.com/sNfviTv.png",
-    deployedAt: "https://kanyesays.now.sh/",
+    deployedAt: "https://theArtificialArtist.com/",
     deployedIcon: {
       type: "span",
       class: "iconify",
@@ -35,7 +35,7 @@ let projects = [
       "data-icon": "logos-github-octocat",
       "data-inline": "false"
     },
-    githubRepo: "https://github.com/jtwray/ReactReduxThunk"
+    githubRepo: "https://github.com/jtwray/artificial-artist-fe"
   },
   {
     name: "Kanyes Quotes",
@@ -108,8 +108,10 @@ function createProjectCards(projectsArr) {
       ),
       (projectDeployedLink.textContent = `Demo `),
       (projectDeployedLink.href = project.deployedAt),
+      (projectDeployedLink.setAttribute("target","_blank")),
       (projectRepo = document.createElement("a")),
       (projectRepo.textContent = `Github `),
+      (projectRepo.setAttribute("target","_blank")),
       (projectRepo.href = project.githubRepo),
       (projectInfoBlock = document.createElement("div")),
       projectInfoBlock.appendChild(projectDeployedLink),
@@ -130,3 +132,30 @@ console.log({ projects });
 let tuckersProjectsItemDiv = document.querySelectorAll(".projects");
 
 console.log("*************************", { tuckersProjectsItemDiv });
+
+// import $ from "jquery";
+
+// $(document).ready(function(){
+//   // Add smooth scrolling to all links
+//   $("a").on('click', function(event) {
+
+//     // Make sure this.hash has a value before overriding default behavior
+//     if (this.hash !== "") {
+//       // Prevent default anchor click behavior
+//       event.preventDefault();
+
+//       // Store hash
+//       var hash = this.hash;
+
+//       // Using jQuery's animate() method to add smooth page scroll
+//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 800, function(){
+
+//         // Add hash (#) to URL when done scrolling (default click behavior)
+//         window.location.hash = hash;
+//       });
+//     } // End if
+//   });
+// });

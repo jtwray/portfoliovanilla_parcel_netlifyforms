@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dot-env": "0.0.1",
+    "jquery": "3.5.1",
     "node-fetch": "2.6.0"
   },
   "devDependencies": {
