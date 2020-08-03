@@ -19,9 +19,10 @@ let projects = [
     },
     githubRepo: "https://github.com/jtwray/ReactReduxThunk"
   },
+
   {
     name: "TheArtificialArtist",
-    imgUrl: "https://i.imgur.com/sNfviTv.png",
+    imgUrl: "https://i.imgur.com/lGQKb7s.png",
     deployedAt: "https://theArtificialArtist.com/",
     deployedIcon: {
       type: "span",
@@ -36,11 +37,11 @@ let projects = [
       "data-inline": "false"
     },
     githubRepo: "https://github.com/jtwray/artificial-artist-fe"
-  },
+  },  
   {
-    name: "Kanyes Quotes",
-    imgUrl: "https://i.imgur.com/sNfviTv.png",
-    deployedAt: "https://kanyesays.now.sh/",
+    name: "rVenture",
+    imgUrl: "https://i.imgur.com/GXJ8srz.jpg",
+    deployedAt: "https://rventuren.herokuapp.com/api",
     deployedIcon: {
       type: "span",
       class: "iconify",
@@ -53,8 +54,8 @@ let projects = [
       "data-icon": "logos-github-octocat",
       "data-inline": "false"
     },
-    githubRepo: "https://github.com/jtwray/ReactReduxThunk"
-  }
+    githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
+  },
 ];
 
 function createProjectCards(projectsArr) {
