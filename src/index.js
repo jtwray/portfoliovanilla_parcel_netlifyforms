@@ -19,6 +19,7 @@ let projects = [
     },
     githubRepo: "https://github.com/jtwray/ReactReduxThunk"
   },
+
   {
     name: "TheArtificialArtist",
     imgUrl: "https://i.imgur.com/lGQKb7s.png",
@@ -36,7 +37,7 @@ let projects = [
       "data-inline": "false"
     },
     githubRepo: "https://github.com/jtwray/artificial-artist-fe"
-  },
+  },  
   {
     name: "rVenture",
     imgUrl: "https://i.imgur.com/GXJ8srz.jpg",
@@ -54,7 +55,7 @@ let projects = [
       "data-inline": "false"
     },
     githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
-  }
+  },
 ];
 
 function createProjectCards(projectsArr) {
