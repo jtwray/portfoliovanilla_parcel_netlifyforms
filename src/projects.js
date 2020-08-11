@@ -74,24 +74,7 @@ let projects = [  {
     githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
   },
 
-  {
-    name: "rVenture",
-    imgUrl: "https://i.imgur.com/GXJ8srz.jpg",
-    deployedAt: "https://rventuren.herokuapp.com/api",
-    deployedIcon: {
-      type: "span",
-      class: "iconify",
-      "data-icon": "logos:netlify",
-      "data-inline": "false"
-    },
-    repoIcon: {
-      type: "span",
-      class: "iconify",
-      "data-icon": "logos-github-octocat",
-      "data-inline": "false"
-    },
-    githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
-  },
+
 ];
 
 function createProjectCards(projectsArr) {
