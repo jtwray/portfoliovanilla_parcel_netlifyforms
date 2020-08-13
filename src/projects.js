@@ -2,7 +2,7 @@ const projectsDiv = document.querySelector("section#projects");
 
 let projects = [  {
   name: "WonderWomen of the World Cup -- GoogleTrends",
-  imgUrl: "https://i.imgur.com/WkSVFc9.png",
+  imgUrl: "https://i.imgur.com/xARRYgX.png",
   deployedAt: "https://womens-world-cup-google-trends.now.sh/",
   deployedIcon: {
     type: "span",
@@ -72,6 +72,24 @@ let projects = [  {
       "data-inline": "false"
     },
     githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
+  },
+  {
+    name: "twittercardPreviews",
+    imgUrl: "https://i.imgur.com/ue1Qmxi.png",
+    deployedAt: "https://twittercardpreview.netlify.app/",
+    deployedIcon: {
+      type: "span",
+      class: "iconify",
+      "data-icon": "logos:netlify",
+      "data-inline": "false"
+    },
+    repoIcon: {
+      type: "span",
+      class: "iconify",
+      "data-icon": "logos-github-octocat",
+      "data-inline": "false"
+    },
+    githubRepo: "https://github.com/jtwray/firebase-serverless-function--socialCards-api"
   },
 
 
