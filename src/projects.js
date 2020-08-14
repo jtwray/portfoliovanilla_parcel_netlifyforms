@@ -21,7 +21,7 @@ let projects = [  {
   {
     name: "Kanyes Quotes",
     imgUrl: "https://i.imgur.com/rebjeFe.png",
-    deployedAt: "https://kanyesays.now.sh/",
+    deployedAt: "https://kanyes-magic-8ball.netlify.app/",
     deployedIcon: {
       type: "span",
       class: "iconify",
