@@ -2,6 +2,7 @@
   max-width: 880px;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   line-height: 1;
@@ -18,8 +19,16 @@ body {
 
 html {
   font-size: 62.5%;
-  margin: 0 auto;
+
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .headerImg {
@@ -45,6 +54,13 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+
+div#navBox {
+  border: unset;
+  border-bottom: none;
+  position: unset;
+}
+
 nav {
   width: auto;
   border: solid #0ff 1rem;
@@ -319,7 +335,12 @@ textarea#message {
   box-shadow: inset 0px 4px 4px 1px #000, inset 4px 8px 8px 1px darkgrey,
     0.2px 0.1px 1px 1px black, -0.3px -0.3px 1px 1px white;
 }
-
+.reachout h2 {
+  margin: 0 auto;
+  width: auto;
+  padding: 1rem 1rem 0 1rem;
+  font-size: 2rem;
+}
 @media only screen and (max-width: 880px) {
   .headerImg img {
     max-width: 25%;
@@ -330,6 +351,7 @@ textarea#message {
     background: linear-gradient(145deg, #10ffff, #0ed8e6);
     box-shadow: 10px 10px 10px #0bb4bf, -10px -10px 10px #13ffff;
   }
+
   nav {
     padding: 0.1rem;
     width: fit-content;
@@ -370,7 +392,7 @@ textarea#message {
     margin: 0rem -1rem 0rem -1rem;
     border-radius: 0 0 5px 5px;
   }
-  label{
+  label {
     max-width: min-content;
   }
 }
@@ -379,10 +401,25 @@ textarea#message {
   html {
     width: 100vw;
     max-width: 600px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
   }
   .headerImg {
     flex-direction: column;
   }
+
+  div#navBox {
+    display: block;
+    border: 0.8rem solid black;
+    border-bottom: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+
   nav {
     box-sizing: border-box;
     width: 100vw;
@@ -390,7 +427,7 @@ textarea#message {
     border: solid #0ff 1rem;
     border-radius: 5px;
     box-shadow: 0.12px 0.24px 4px black, -0.12px -0.24px 4px white;
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 1px;
     justify-content: center;
@@ -569,6 +606,7 @@ textarea#message {
     text-shadow: -0.5px -0.5px 1.1px #000, 0.9px 0.9px 1.1px #f9f9f9;
     margin-top: 0rem;
   }
+
   #skills > h2 {
     width: 100%;
     font-size: 5.2rem;
@@ -576,10 +614,31 @@ textarea#message {
     padding: 0px 0 0 0rem;
     margin: 33% 0% 0% 42%;
   }
+
   #skills > p {
-    margin: 2rem 1rem 2rem 2rem;
+    margin: 0rem;
+  }
+
+  .introduction > p {
+    margin: 0;
+    line-height: 1.5;
+    border-bottom: #0ff 1rem solid;
+  }
+
+  .reachout h2 {
+    margin: 0 auto;
+    width: auto;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 2rem;
+  }
+
+  .wholeFormBox {
+    padding: 10px 20px;
+    margin: 5%;
+    /* width: 100vw; */
+  }
+
+  #contact form {
+    padding: 0rem;
   }
 }
-
-
-/*# sourceMappingURL=/css.967bad95.css.map */
