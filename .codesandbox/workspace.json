@@ -1,0 +1,33 @@
+{
+  "preview": [
+    {
+      "views": [
+        {
+          "id": "codesandbox.browser"
+        },
+        {
+          "id": "codesandbox.browser",
+          "options": {
+            "port": 41337,
+            "url": "https://3ci8c-41337.sse.codesandbox.io"
+          },
+          "closeable": true
+        }
+      ]
+    },
+    {
+      "open": true,
+      "views": [
+        {
+          "id": "codesandbox.terminal"
+        },
+        {
+          "id": "codesandbox.console"
+        },
+        {
+          "id": "codesandbox.problems"
+        }
+      ]
+    }
+  ]
+}
