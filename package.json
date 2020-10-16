@@ -12,6 +12,7 @@
   "dependencies": {
     "apollo-server": "2.16.1",
     "apollo-server-lambda": "2.16.1",
+    "assets": "^3.0.1",
     "dot-env": "0.0.1",
     "jquery": "3.5.1",
     "netlify-lambda": "2.0.1",
