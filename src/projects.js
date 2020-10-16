@@ -7,13 +7,15 @@ const {
   artificialartist_preview,
   twittercardapi_preview
 } = images;
-
+console.log({ rventure_preview });
 const projectsDiv = document.querySelector("section#projects");
 
 let projects = [
   {
     name: "WonderWomen of the World Cup -- GoogleTrends",
-    imgUrl: wonderwomen_preview,
+    imgUrl:
+      wonderwomen_preview ||
+      "https://mibvv.sse.codesandbox.io/wonderwomen.11bba937.webp",
     deployedAt: "https://womens-world-cup-google-trends.now.sh/",
     deployedIcon: {
       type: "span",
@@ -31,7 +33,9 @@ let projects = [
   },
   {
     name: "Kanyes Quotes",
-    imgUrl: kanyes8ball_preview,
+    imgUrl:
+      kanyes8ball_preview ||
+      "https://mibvv.sse.codesandbox.io/kanyes8ball-preview.2e14a639.webp",
     deployedAt: "https://kanyes-magic-8ball.netlify.app/",
     deployedIcon: {
       type: "span",
@@ -50,7 +54,9 @@ let projects = [
 
   {
     name: "TheArtificialArtist",
-    imgUrl: artificialartist_preview,
+    imgUrl:
+      artificialartist_preview ||
+      "https://mibvv.sse.codesandbox.io/artificialartist-preview.b1de9bf7.webp",
     deployedAt: "https://theArtificialArtist.com/",
     deployedIcon: {
       type: "span",
@@ -68,7 +74,9 @@ let projects = [
   },
   {
     name: "rVenture",
-    imgUrl: rventure_preview,
+    imgUrl:
+      rventure_preview ||
+      "https://mibvv.sse.codesandbox.io/rventure-preview.794d6141.webp",
     deployedAt: "https://rventuren.herokuapp.com/api",
     deployedIcon: {
       type: "span",
@@ -86,7 +94,9 @@ let projects = [
   },
   {
     name: "twittercardPreviews",
-    imgUrl: twittercardapi_preview,
+    imgUrl:
+      twittercardapi_preview ||
+      "https://mibvv.sse.codesandbox.io/twittercardapi-preview.7c7d5c5f.webp",
     deployedAt: "https://twittercardpreview.netlify.app/",
     deployedIcon: {
       type: "span",

@@ -118,14 +118,30 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"functions/processForm.js":[function(require,module,exports) {
+function getTimeofDayofWeek() {
+  // For todays date;
+  Date.prototype.today = function () {
+    return (this.getDate() < 10 ? "0" : "") + this.getDate() + "/" + (this.getMonth() + 1 < 10 ? "0" : "") + (this.getMonth() + 1) + "/" + this.getFullYear();
+  }; // For the time now
+
+
+  Date.prototype.timeNow = function () {
+    return (this.getHours() < 10 ? "0" : "") + this.getHours() + ":" + (this.getMinutes() < 10 ? "0" : "") + this.getMinutes() + ":" + (this.getSeconds() < 10 ? "0" : "") + this.getSeconds();
+  };
+
+  var datetime = "".concat(new Date().today(), " @").concat(new Date().timeNow());
+  return datetime;
+}
+
 var processForm = function processForm(form) {
+  var datetime = getTimeofDayofWeek();
   var data = new FormData(form);
   data.append("form-name", "reachout");
   fetch("/", {
     method: "POST",
     body: data
   }).then(function () {
-    form.innerHTML = "<div class=\"form--success\"> Almost there! Check you inbox for a confirmation e-mail.</div>";
+    form.innerHTML = "<div class=\"form--success\">Success! You message has been delivered ".concat(datetime, ". Thanks for reaching out. Ill be in touch ASAP. </div>");
   }).catch(function (error) {
     form.innerHTML = "<div class=\"form--error\">Error: ".concat(error, "</div>");
   });
@@ -167,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40957" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38107" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
