@@ -1,5 +1,4 @@
 import * as images from "../assets/images/index.js";
-
 const {
   wonderwomen_preview,
   kanyes8ball_preview,
@@ -9,7 +8,6 @@ const {
 } = images;
 
 const projectsDiv = document.querySelector("section#projects");
-
 let projects = [
   {
     name: "WonderWomen of the World Cup -- GoogleTrends",
