@@ -117,11 +117,76 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/projects.js":[function(require,module,exports) {
+})({"assets/images/jtwray-headshot.webp":[function(require,module,exports) {
+module.exports = "/jtwray-headshot.3f0fe1fe.webp";
+},{}],"assets/images/artificialartist-preview.webp":[function(require,module,exports) {
+module.exports = "/artificialartist-preview.b1de9bf7.webp";
+},{}],"assets/images/kanyes8ball-preview.webp":[function(require,module,exports) {
+module.exports = "/kanyes8ball-preview.2e14a639.webp";
+},{}],"assets/images/rventure-preview.webp":[function(require,module,exports) {
+module.exports = "/rventure-preview.794d6141.webp";
+},{}],"assets/images/twittercardapi-preview.webp":[function(require,module,exports) {
+module.exports = "/twittercardapi-preview.7c7d5c5f.webp";
+},{}],"assets/images/tuckerwray-metwittercard-preview.webp":[function(require,module,exports) {
+module.exports = "/tuckerwray-metwittercard-preview.080bd576.webp";
+},{}],"assets/images/wonderwomen.webp":[function(require,module,exports) {
+module.exports = "/wonderwomen.11bba937.webp";
+},{}],"assets/images/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.twittercardapi_preview = exports.tuckerwraymetwittercard_preview = exports.jtwray = exports.artificialartist_preview = exports.rventure_preview = exports.kanyes8ball_preview = exports.wonderwomen_preview = void 0;
+
+var jtwray = require("./jtwray-headshot.webp");
+
+exports.jtwray = jtwray;
+
+var artificialartist_preview = require("./artificialartist-preview.webp");
+
+exports.artificialartist_preview = artificialartist_preview;
+
+var kanyes8ball_preview = require("./kanyes8ball-preview.webp");
+
+exports.kanyes8ball_preview = kanyes8ball_preview;
+
+var rventure_preview = require("./rventure-preview.webp");
+
+exports.rventure_preview = rventure_preview;
+
+var twittercardapi_preview = require("./twittercardapi-preview.webp");
+
+exports.twittercardapi_preview = twittercardapi_preview;
+
+var tuckerwraymetwittercard_preview = require("./tuckerwray-metwittercard-preview.webp");
+
+exports.tuckerwraymetwittercard_preview = tuckerwraymetwittercard_preview;
+
+var wonderwomen_preview = require("./wonderwomen.webp");
+
+exports.wonderwomen_preview = wonderwomen_preview;
+},{"./jtwray-headshot.webp":"assets/images/jtwray-headshot.webp","./artificialartist-preview.webp":"assets/images/artificialartist-preview.webp","./kanyes8ball-preview.webp":"assets/images/kanyes8ball-preview.webp","./rventure-preview.webp":"assets/images/rventure-preview.webp","./twittercardapi-preview.webp":"assets/images/twittercardapi-preview.webp","./tuckerwray-metwittercard-preview.webp":"assets/images/tuckerwray-metwittercard-preview.webp","./wonderwomen.webp":"assets/images/wonderwomen.webp"}],"src/projects.js":[function(require,module,exports) {
+"use strict";
+
+var images = _interopRequireWildcard(require("../assets/images/index.js"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var wonderwomen_preview = images.wonderwomen_preview,
+    kanyes8ball_preview = images.kanyes8ball_preview,
+    rventure_preview = images.rventure_preview,
+    artificialartist_preview = images.artificialartist_preview,
+    twittercardapi_preview = images.twittercardapi_preview;
+console.log({
+  rventure_preview: rventure_preview
+});
 var projectsDiv = document.querySelector("section#projects");
 var projects = [{
   name: "WonderWomen of the World Cup -- GoogleTrends",
-  imgUrl: "https://i.imgur.com/xARRYgX.png",
+  imgUrl: wonderwomen_preview || "https://mibvv.sse.codesandbox.io/wonderwomen.11bba937.webp",
   deployedAt: "https://womens-world-cup-google-trends.now.sh/",
   deployedIcon: {
     type: "span",
@@ -138,7 +203,7 @@ var projects = [{
   githubRepo: "https://github.com/jtwray/womensWorldCupGoogleTrends"
 }, {
   name: "Kanyes Quotes",
-  imgUrl: "https://i.imgur.com/rebjeFe.png",
+  imgUrl: kanyes8ball_preview || "https://mibvv.sse.codesandbox.io/kanyes8ball-preview.2e14a639.webp",
   deployedAt: "https://kanyes-magic-8ball.netlify.app/",
   deployedIcon: {
     type: "span",
@@ -155,7 +220,7 @@ var projects = [{
   githubRepo: "https://github.com/jtwray/ReactReduxThunk"
 }, {
   name: "TheArtificialArtist",
-  imgUrl: "https://i.imgur.com/lGQKb7s.png",
+  imgUrl: artificialartist_preview || "https://mibvv.sse.codesandbox.io/artificialartist-preview.b1de9bf7.webp",
   deployedAt: "https://theArtificialArtist.com/",
   deployedIcon: {
     type: "span",
@@ -172,7 +237,7 @@ var projects = [{
   githubRepo: "https://github.com/jtwray/artificial-artist-fe"
 }, {
   name: "rVenture",
-  imgUrl: "https://i.imgur.com/GXJ8srz.jpg",
+  imgUrl: rventure_preview || "https://mibvv.sse.codesandbox.io/rventure-preview.794d6141.webp",
   deployedAt: "https://rventuren.herokuapp.com/api",
   deployedIcon: {
     type: "span",
@@ -189,7 +254,7 @@ var projects = [{
   githubRepo: "https://github.com/Build-Week-RVAirBnB/Backend"
 }, {
   name: "twittercardPreviews",
-  imgUrl: "https://i.imgur.com/ue1Qmxi.png",
+  imgUrl: twittercardapi_preview || "https://mibvv.sse.codesandbox.io/twittercardapi-preview.7c7d5c5f.webp",
   deployedAt: "https://twittercardpreview.netlify.app/",
   deployedIcon: {
     type: "span",
@@ -209,24 +274,12 @@ var projects = [{
 function createProjectCards(projectsArr) {
   var card, cardImage, cardTitle, projectDeployedLink, projectDeployedIcon, projectRepo, projectRepoIcon, projectInfoBlock;
   projectsArr.map(function (project) {
-    card = document.createElement("div"), card.classList.add("card"), cardImage = document.createElement("img"), cardImage.src = project.imgUrl, card.appendChild(cardImage), cardTitle = document.createElement("h3"), cardTitle.classList.add("cardTitle"), cardTitle.style.fontSize = "2rem", cardTitle.textContent = project.name, card.appendChild(cardTitle), projectDeployedLink = document.createElement("a"), projectDeployedIcon = document.createElement(project.deployedIcon.type), console.log("************(((((((()))))))))))8***", {
-      projectDeployedIcon: projectDeployedIcon
-    });
-    projectDeployedIcon.classList.add([project.deployedIcon.class]), projectDeployedIcon.setAttribute("data-icon", "".concat(project.deployedIcon["data-icon"])), projectDeployedIcon.setAttribute("data-inline", "".concat(project.deployedIcon["data-inline"])), projectRepoIcon = document.createElement(project.repoIcon.type), console.log("************(((((((()))))))))))8***", {
-      projectRepoIcon: projectRepoIcon
-    });
-    projectRepoIcon.classList.add([project.repoIcon.class]), projectRepoIcon.setAttribute("data-icon", "".concat(project.repoIcon["data-icon"])), projectRepoIcon.setAttribute("data-inline", "".concat(project.deployedIcon["data-inline"])), projectDeployedLink.textContent = "Demo ", projectDeployedLink.href = project.deployedAt, projectDeployedLink.setAttribute("target", "_blank"), projectRepo = document.createElement("a"), projectRepo.textContent = "Github ", projectRepo.setAttribute("target", "_blank"), projectRepo.href = project.githubRepo, projectInfoBlock = document.createElement("div"), projectInfoBlock.appendChild(projectDeployedLink), projectDeployedLink.appendChild(projectDeployedIcon), projectInfoBlock.appendChild(projectRepo), projectRepo.appendChild(projectRepoIcon), projectInfoBlock.classList.add("projectInfoBlock"), card.appendChild(projectInfoBlock), console.log(card), projectsDiv.appendChild(card);
+    card = document.createElement("div"), card.classList.add("card"), cardImage = document.createElement("img"), cardImage.src = project.imgUrl, card.appendChild(cardImage), cardTitle = document.createElement("h3"), cardTitle.classList.add("cardTitle"), cardTitle.style.fontSize = "2rem", cardTitle.textContent = project.name, card.appendChild(cardTitle), projectDeployedLink = document.createElement("a"), projectDeployedIcon = document.createElement(project.deployedIcon.type), projectDeployedIcon.classList.add([project.deployedIcon.class]), projectDeployedIcon.setAttribute("data-icon", "".concat(project.deployedIcon["data-icon"])), projectDeployedIcon.setAttribute("data-inline", "".concat(project.deployedIcon["data-inline"])), projectRepoIcon = document.createElement(project.repoIcon.type), projectRepoIcon.classList.add([project.repoIcon.class]), projectRepoIcon.setAttribute("data-icon", "".concat(project.repoIcon["data-icon"])), projectRepoIcon.setAttribute("data-inline", "".concat(project.deployedIcon["data-inline"])), projectDeployedLink.textContent = "Demo ", projectDeployedLink.href = project.deployedAt, projectDeployedLink.setAttribute("target", "_blank"), projectRepo = document.createElement("a"), projectRepo.textContent = "Github ", projectRepo.setAttribute("target", "_blank"), projectRepo.href = project.githubRepo, projectInfoBlock = document.createElement("div"), projectInfoBlock.appendChild(projectDeployedLink), projectDeployedLink.appendChild(projectDeployedIcon), projectInfoBlock.appendChild(projectRepo), projectRepo.appendChild(projectRepoIcon), projectInfoBlock.classList.add("projectInfoBlock"), card.appendChild(projectInfoBlock), projectsDiv.appendChild(card);
   });
 }
 
 createProjectCards(projects);
-console.log({
-  projects: projects
-});
-var tuckersProjectsItemDiv = document.querySelectorAll(".projects");
-console.log("*************************", {
-  tuckersProjectsItemDiv: tuckersProjectsItemDiv
-}); // import $ from "jquery";
+var tuckersProjectsItemDiv = document.querySelectorAll(".projects"); // import $ from "jquery";
 // $(document).ready(function(){
 //   // Add smooth scrolling to all links
 //   $("a").on('click', function(event) {
@@ -247,7 +300,7 @@ console.log("*************************", {
 //     } // End if
 //   });
 // });
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../assets/images/index.js":"assets/images/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -275,7 +328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40957" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38107" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
