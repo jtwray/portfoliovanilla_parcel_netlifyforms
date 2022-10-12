@@ -10,7 +10,7 @@
     "bundle": "cpx src/**/* functions/bundle"
   },
   "dependencies": {
-    "apollo-server": "2.16.1",
+    "apollo-server": "2.25.4",
     "apollo-server-lambda": "2.16.1",
 "faunadb":"3.0.1",
     "assets": "^3.0.1",
