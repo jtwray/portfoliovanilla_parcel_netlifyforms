@@ -1,21 +1,21 @@
-const processForm = form => {
-  const data = new FormData(form);
-  data.append("form-name", "reachout");
+const processForm = (form) => {
+  const reachoutFormSubmissionData = new FormData(form);
+  reachoutFormSubmissionData.append("form-name", "reachout");
   fetch("/", {
     method: "POST",
-    body: data
+    body: reachoutFormSubmissionData
   })
     .then(() => {
-      form.innerHTML = `<div class="form--success"> Almost there! Check you inbox for a confirmation e-mail.</div>`;
+      form.innerHTML = `<div class="form--success"> Message Delivered! I'll follow up with you asap. You should see a confirmation come through your inbox pretty soon.</div>`;
     })
-    .catch(error => {
+    .catch((error) => {
       form.innerHTML = `<div class="form--error">Error: ${error}</div>`;
     });
 };
 
 const reachout = document.querySelector(".reachout");
 if (reachout) {
-  reachout.addEventListener("submit", e => {
+  reachout.addEventListener("submit", (e) => {
     e.preventDefault();
     processForm(reachout);
   });
