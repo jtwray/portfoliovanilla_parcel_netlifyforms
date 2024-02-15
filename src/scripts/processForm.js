@@ -1,4 +1,18 @@
+function getTimeofDayofWeek() {
+  // For todays date;
+  Date.prototype.today = function () {
+    return ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + this.getFullYear();
+  }
+  // For the time now
+  Date.prototype.timeNow = function () {
+    return ((this.getHours() < 10) ? "0" : "") + this.getHours() + ":" + ((this.getMinutes() < 10) ? "0" : "") + this.getMinutes() + ":" + ((this.getSeconds() < 10) ? "0" : "") + this.getSeconds();
+  }
+  var datetime = `${new Date().today()} @${new Date().timeNow()}`
+  return datetime
+}
+
 const processForm = (form) => {
+  const datetime = getTimeofDayofWeek()
   const reachoutFormSubmissionData = new FormData(form);
   reachoutFormSubmissionData.append("form-name", "reachout");
   fetch("/", {
@@ -6,7 +20,7 @@ const processForm = (form) => {
     body: reachoutFormSubmissionData
   })
     .then(() => {
-      form.innerHTML = `<div class="form--success"> Message Delivered! I'll follow up with you asap. You should see a confirmation come through your inbox pretty soon.</div>`;
+      form.innerHTML = `<div class="form--success">Success! Your message has been delivered ${datetime}. Thanks for reaching out. Ill be in touch ASAP.</div>`;
     })
     .catch((error) => {
       form.innerHTML = `<div class="form--error">Error: ${error}</div>`;
