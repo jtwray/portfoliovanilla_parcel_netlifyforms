@@ -4,9 +4,8 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html distDir public",
-    "nodemonstart": "nodemon",
-    "bundle": "cpx src/**/* functions/bundle"
+    "build": "parcel build index.html  ",
+    "nodemonstart": "nodemon"
   },
   "dependencies": {
     "apollo-server": "2.16.1",
