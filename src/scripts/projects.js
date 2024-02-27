@@ -1,4 +1,4 @@
-import * as images from "../assets/images/index.js";
+import * as images from "../../assets/images/index.js";
 
 const {
   wonderwomen_preview,
