@@ -1,5 +1,5 @@
 [build]
-baseURL="www.tuckerwray.me"
+baseURL="www.tuckerwray.com"
 functions= "./functions"
 
 [[redirects]]
