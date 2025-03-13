@@ -4,5 +4,5 @@ functions= "./functions"
 
 [[redirects]]
 from = "/zoho-domain-verification.html"
-to = "/Zoho-domain-verification.html"
+to = "/zoho-domain-verification.html"
 status = 200
