@@ -1,3 +1,8 @@
 [build]
-baseURL="www.tuckerwray.me"
+baseURL="www.tuckerwray.com"
 functions= "./functions"
+
+[[redirects]]
+from = "/zoho-domain-verification.html"
+to = "/zoho-domain-verification.html"
+status = 200
