@@ -1,10 +1,10 @@
-const jtwray = require("./jtwray-headshot.webp");
-const artificialartist_preview = require("./artificialartist-preview.webp");
-const kanyes8ball_preview = require("./kanyes8ball-preview.webp");
-const rventure_preview = require("./rventure-preview.webp");
-const twittercardapi_preview = require("./twittercardapi-preview.webp");
-const tuckerwraymetwittercard_preview = require("./tuckerwray-metwittercard-preview.webp");
-const wonderwomen_preview = require("./wonderwomen.webp");
+import  jtwray from "./jtwray-headshot.webp";
+import  artificialartist_preview from "./artificialartist-preview.webp";
+import  kanyes8ball_preview from "./kanyes8ball-preview.webp";
+import  rventure_preview from "./rventure-preview.webp";
+import  twittercardapi_preview from "./twittercardapi-preview.webp";
+import  tuckerwraymetwittercard_preview from "./tuckerwray-metwittercard-preview.webp";
+import  wonderwomen_preview from "./wonderwomen.webp";
 export {
   wonderwomen_preview,
   kanyes8ball_preview,

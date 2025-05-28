@@ -1,3 +1,16 @@
 [build]
-baseURL="www.tuckerwray.me"
-functions= "./functions"
+baseURL = "www.tuckerwray.com"
+command = "npm run build"
+publish = "dist"
+functions = "functions"
+
+[dev]
+baseURL = "www.tuckerwray.com"
+command = "npm run dev"
+functions = "functions"
+publish = "dist"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
