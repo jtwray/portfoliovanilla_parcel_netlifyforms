@@ -3,7 +3,7 @@ baseURL="www.tuckerwray.com"
 functions= "./functions"
 
 [[redirects]]
-from = "/bananalambda"
+from = "/certs/lambda"
 to = "https://www.credly.com/badges/9ddc5207-5a9b-4117-a632-8e966adaf2d3/linked_in_profile"
 status = 301
 
